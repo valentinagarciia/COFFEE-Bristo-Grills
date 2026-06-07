@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Iniciar Sesión</title>
+  <style>
+    /* Elimina márgenes y rellenos por defecto y ajusta el modelo de caja */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Estilos generales del cuerpo de la página */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna y legible */
+      height: 100vh; /* Altura completa de la ventana */
+      background: url('img/login.jpg') 
+        no-repeat center center fixed; /* Imagen de fondo centrada y fija */
+      background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+      position: relative; /* Necesario para colocar la capa transparente encima */
+    }
+
+    /* Capa oscura semitransparente sobre el fondo */
+    body::before {
+      content: ""; /* Obligatorio para pseudoelemento */
+      position: absolute; /* Cubre toda la pantalla */
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Negro con opacidad del 50% */
+      z-index: 0; /* Detrás del contenido principal */
+    }
+
+    /* Caja del formulario de login */
+    .login-box {
+      position: relative; /* Para situarse por encima de la capa oscura */
+      z-index: 1; /* Encima de la capa transparente */
+      background-color: rgba(255, 255, 255, 0.9); /* Blanco con opacidad (transparente) */
+      padding: 40px; /* Espacio interior */
+      border-radius: 15px; /* Bordes redondeados */
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Sombra para efecto flotante */
+      width: 100%;
+      max-width: 350px; /* Ancho máximo */
+      margin: auto; /* Centrado horizontal */
+      top: 50%;
+      transform: translateY(-50%); /* Centrado vertical */
+    }
+
+    /* Título del formulario */
+    .login-box h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #0072ff; /* Azul moderno */
+    }
+
+    /* Etiquetas de los campos */
+    .login-box label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    /* Campos de texto */
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      transition: 0.3s ease; /* Suaviza efectos al enfocar */
+    }
+
+    /* Efecto al enfocar los campos */
+    .login-box input[type="text"]:focus,
+    .login-box input[type="password"]:focus {
+      border-color: #0072ff; /* Borde azul al enfocar */
+      box-shadow: 0 0 5px rgba(0, 114, 255, 0.3);
+    }
+
+    /* Botón de enviar */
+    .login-box input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background-color: #0072ff; /* Azul moderno */
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Efecto al pasar el mouse sobre el botón */
+    .login-box input[type="submit"]:hover {
+      background-color: #005bb5; /* Azul más oscuro al pasar el cursor */
+    }
+
+    /* Estilos para enlaces adicionales */
+    .login-box .extra {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .login-box .extra a {
+      text-decoration: none;
+      color: #0072ff;
+      font-size: 14px;
+    }
+
+    .login-box .extra a:hover {
+      text-decoration: underline; /* Subrayado al pasar el cursor */
+    }
+  </style>
+</head>
+<body>
+  <!-- Contenedor del formulario -->
+  <div class="login-box">
+    <h2>Iniciar Sesión</h2>
+    <form action="#" method="post" id="formularioLogin">
+      <!-- Campo de usuario -->
+      <label for="usuario">Usuario</label>
+      <input type="text" id="usuario" name="usuario" required />
+
+      <!-- Campo de contraseña -->
+      <label for="contrasena">Contraseña</label>
+      <input type="password" id="contrasena" name="contrasena" required />
+
+      <!-- Botón de envío -->
+      <input type="submit" value="Entrar" />
+    </form>
+
+    <!-- Enlaces adicionales -->
+    <div class="extra">
+      <p><a href="recuperar.html">¿Olvidaste tu contraseña?</a></p>
+      <p><a href="registro.html">Crear cuenta nueva</a></p>
+    </div>
+  </div>
+  <script type="text/javascript" src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promociones | COFFEE Bristo & Grills</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="estilos_maquetacion.css">
+    <link rel="icon" type="image/jpg" href="img/LOGO.png">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/LOGO.png" alt="COFFEE Bristo & Grills">
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html"><i class="fi fi-rr-home"></i> Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#"><i class="fi fi-rr-coffee"></i> Menú ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="cafes.html">Cafés Especiales</a></li>
+                            <li><a href="desayunos.html">Desayunos y Brunch</a></li>
+                            <li><a href="grills.html">Grills y Platos Fuertes</a></li>
+                            <li><a href="postres.html">Postres y Repostería</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="promociones.html"><i class="fi fi-rr-tags"></i> Promociones</a></li>
+                    <li><a href="https://api.whatsapp.com/send/?phone=529331644168&text&type=phone_number&app_absent=0"><i class="fi fi-rr-phone-call"></i> Contacto</a></li>
+                    <li><a href="login.html" class="btn-login"><i class="fi fi-rr-user"></i> Login</a></li>
+                    <li><a href="#" id="cart-icon" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="padding: 80px 0 100px;">
+        <h1 style="font-size: 3rem; color: #8D5524; margin-bottom: 20px;">Promociones Especiales</h1>
+        <p style="font-size: 1.3rem; max-width: 700px; margin-bottom: 50px; color: #555;">
+            Aprovecha nuestras ofertas del mes. ¡Por tiempo limitado!
+        </p>
+
+        <div class="contenedor-tres">
+            <!-- Promo 1 -->
+            <div class="cuadro cuadro-pequeno">
+                <div class="imagen-placeholder"><img src="img/28.jpg" alt="Promo Desayuno"></div>
+                <h3>Desayuno Bristo Duo</h3>
+                <p>2 desayunos completos + 2 cafés grandes</p>
+                <p><strong style="color:#e74c3c;">$149</strong> <s>$190</s></p>
+                <button class="add-to-cart" data-name="Desayuno Bristo Duo" data-price="149">Agregar al carrito</button>
+            </div>
+
+            <!-- Promo 2 -->
+            <div class="cuadro cuadro-pequeno">
+                <div class="imagen-placeholder"><img src="img/29.jpg" alt="Promo Café"></div>
+                <h3>Café + Postre</h3>
+                <p>Cualquier café grande + cheesecake o brownie</p>
+                <p><strong style="color:#e74c3c;">$89</strong> <s>$115</s></p>
+                <button class="add-to-cart" data-name="Combo Café + Postre" data-price="89">Agregar al carrito</button>
+            </div>
+
+            <!-- Promo 3 -->
+            <div class="cuadro cuadro-pequeno">
+                <div class="imagen-placeholder"><img src="img/30.jpg" alt="Promo Grill"></div>
+                <h3>Grill Familiar</h3>
+                <p>2 Chicken Grills + papas + 2 refrescos</p>
+                <p><strong style="color:#e74c3c;">$249</strong> <s>$310</s></p>
+                <button class="add-to-cart" data-name="Grill Familiar" data-price="249">Agregar al carrito</button>
+            </div>
+
+            <!-- Promo 4 -->
+            <div class="cuadro cuadro-pequeno">
+                <div class="imagen-placeholder"><img src="img/31.jpg" alt="Promo Brunch"></div>
+                <h3>Brunch Weekend</h3>
+                <p>Pancakes + Avocado Toast + Latte</p>
+                <p><strong style="color:#e74c3c;">$115</strong> <s>$145</s></p>
+                <button class="add-to-cart" data-name="Brunch Weekend" data-price="115">Agregar al carrito</button>
+            </div>
+
+            <!-- Promo 5 -->
+            <div class="cuadro cuadro-pequeno">
+                <div class="imagen-placeholder"><img src="img/32.jpg" alt="Promo Postre"></div>
+                <h3>2x1 en Postres</h3>
+                <p>Elige 2 postres (el de menor valor gratis)</p>
+                <p><strong style="color:#e74c3c;">Precio especial</strong></p>
+                <button class="add-to-cart" data-name="Promo 2x1 Postres" data-price="120">Agregar al carrito</button>
+            </div>
+
+            <!-- Promo 6 -->
+            <div class="cuadro cuadro-pequeno">
+                <div class="imagen-placeholder"><img src="img/33.jpg" alt="Promo Café"></div>
+                <h3>Cold Brew + Sandwich</h3>
+                <p>Cold Brew grande + Sandwich de pollo</p>
+                <p><strong style="color:#e74c3c;">$99</strong> <s>$125</s></p>
+                <button class="add-to-cart" data-name="Cold Brew + Sandwich" data-price="99">Agregar al carrito</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <p>📍 Benito Juárez 216, La Candelaria, 86605 Paraíso, Tab.</p>
+                    <p>📞 +52 933 164 4168</p>
+                    <p>✉️ hola@coffebristo.com</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Ubicación</h4>
+                    <p>Paraíso, Tabasco</p>
+                    <div class="mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3785.9421249819943!2d-93.21719478960398!3d18.3954849826017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ee8cd43c8d1bd9%3A0x80d4d2b77e16ad9!2sParque%20Venustiano%20Carranza!5e0!3m2!1ses!2smx!4v1780026919325!5m2!1ses!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Redes Sociales</h4>
+                    <div class="redes-sociales">
+                        <a href="https://www.instagram.com/coffebristo"><i class="fab fa-instagram"></i> Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Coffe Bristo & Grills. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- CARRITO MODAL -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <h2>Tu Carrito <span id="modal-cart-count">0</span></h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">Total: <strong id="cart-total">$0</strong></div>
+            <button class="btn-comprar" onclick="checkout()">Pagar Pedido</button>
+            <button onclick="closeCart()">Cerrar</button>
+        </div>
+    </div>
+
+    <a href="https://wa.me/529331644168" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // === CARRITO JS ===
+        let cart = JSON.parse(localStorage.getItem('coffeBristoCart')) || [];
+
+        function updateCartCount() {
+            const count = cart.reduce((sum, item) => sum + item.quantity, 0);
+            const countEl = document.getElementById('cart-count');
+            if (countEl) countEl.textContent = count;
+        }
+
+        function addToCart(name, price) {
+            const existing = cart.find(item => item.name === name);
+            if (existing) {
+                existing.quantity += 1;
+            } else {
+                cart.push({ name, price: parseFloat(price), quantity: 1 });
+            }
+            localStorage.setItem('coffeBristoCart', JSON.stringify(cart));
+            updateCartCount();
+            alert(`${name} agregado al carrito`);
+        }
+
+        function renderCart() {
+            const container = document.getElementById('cart-items');
+            container.innerHTML = '';
+            let total = 0;
+
+            cart.forEach((item, index) => {
+                total += item.price * item.quantity;
+                container.innerHTML += `
+                    <div class="cart-item">
+                        <span>${item.name}</span>
+                        <span>$${item.price} × ${item.quantity}</span>
+                        <button onclick="changeQuantity(${index}, -1)">-</button>
+                        <button onclick="changeQuantity(${index}, 1)">+</button>
+                        <button onclick="removeFromCart(${index})">Eliminar</button>
+                    </div>
+                `;
+            });
+
+            document.getElementById('cart-total').textContent = `$${total}`;
+            document.getElementById('modal-cart-count').textContent = cart.length;
+        }
+
+        function changeQuantity(index, change) {
+            cart[index].quantity += change;
+            if (cart[index].quantity < 1) cart.splice(index, 1);
+            localStorage.setItem('coffeBristoCart', JSON.stringify(cart));
+            renderCart();
+            updateCartCount();
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            localStorage.setItem('coffeBristoCart', JSON.stringify(cart));
+            renderCart();
+            updateCartCount();
+        }
+
+        function openCart() {
+            renderCart();
+            document.getElementById('cart-modal').style.display = 'flex';
+        }
+
+        function closeCart() {
+            document.getElementById('cart-modal').style.display = 'none';
+        }
+
+        function checkout() {
+            if (cart.length === 0) return alert("El carrito está vacío");
+            alert("¡Gracias por tu pedido! Te contactaremos por WhatsApp para confirmar los detalles.");
+            cart = [];
+            localStorage.setItem('coffeBristoCart', JSON.stringify(cart));
+            closeCart();
+            updateCartCount();
+        }
+
+        // Eventos
+        document.querySelectorAll('.add-to-cart').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const name = btn.getAttribute('data-name');
+                const price = btn.getAttribute('data-price');
+                addToCart(name, price);
+            });
+        });
+
+        document.getElementById('cart-icon').addEventListener('click', (e) => {
+            e.preventDefault();
+            openCart();
+        });
+
+        updateCartCount();
+    </script>
+</body>
+</html>
